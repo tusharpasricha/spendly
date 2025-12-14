@@ -142,7 +142,7 @@ function TransactionReviewRow({
 
 function Import() {
   const [file, setFile] = useState<File | null>(null);
-  const [loading, setLoading] = useState(false);
+
   const [parsing, setParsing] = useState(false);
   const [saving, setSaving] = useState(false);
   const [transactions, setTransactions] = useState<TransactionRow[]>([]);
@@ -166,7 +166,7 @@ function Import() {
       setCategories(categoriesRes.data?.data?.categories || []);
       
       // Set first account as default
-      if (accountsRes.data?.data?.accounts?.length > 0) {
+      if (accountsRes.data?.data?.accounts && accountsRes.data.data.accounts.length > 0) {
         setSelectedAccount(accountsRes.data.data.accounts[0]._id);
       }
     } catch (err) {

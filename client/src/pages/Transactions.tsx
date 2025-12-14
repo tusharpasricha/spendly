@@ -15,7 +15,6 @@ import { Loader2, Plus, Pencil, Trash2, ArrowUpCircle, ArrowDownCircle, Calendar
 import { Badge } from '@/components/ui/badge';
 import { format } from 'date-fns';
 import { Calendar } from '@/components/ui/calendar';
-import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
 
 function Transactions() {
   const [transactions, setTransactions] = useState<Transaction[]>([]);

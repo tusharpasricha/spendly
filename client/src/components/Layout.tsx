@@ -56,7 +56,7 @@ function Layout() {
         </main>
         <footer className="border-subtle py-2 px-4">
           <div className="text-center text-[10px] text-muted-foreground">
-            <p>&copy; 2024 MERN Application. All rights reserved.</p>
+            <p>&copy; 2024 Spendly. All rights reserved.</p>
           </div>
         </footer>
       </SidebarInset>

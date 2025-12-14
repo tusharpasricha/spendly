@@ -6,7 +6,7 @@ import {
   Settings,
   ChevronUp,
   User2,
-  DollarSign,
+  IndianRupee,
 } from "lucide-react"
 
 import {
@@ -62,7 +62,7 @@ export function AppSidebar() {
             <SidebarMenuButton size="lg" asChild>
               <Link to="/">
                 <div className="flex aspect-square size-8 items-center justify-center rounded-lg bg-gradient-to-br from-green-500 to-emerald-600 text-white">
-                  <DollarSign className="size-4" />
+                  <IndianRupee className="size-4" />
                 </div>
                 <div className="grid flex-1 text-left text-sm leading-tight">
                   <span className="truncate font-semibold">Spendly</span>
